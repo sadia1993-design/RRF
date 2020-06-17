@@ -1,0 +1,430 @@
+/* css index
+----------------------------------------
+  1. Theme default css
+  2. header
+*/
+/* 1. theme default css */
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    color: #313131;
+    font-style: normal;
+    margin-top: 0px;
+    text-transform: normal;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 2. header */
+header#blog-area {
+    height: 500px;
+}
+
+.blog-heading h2:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: orange;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.blog-heading {
+    position: relative;
+}
+
+.blog-heading h2:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: navy;
+    top: 50%;
+    left: 49%;
+    z-index: 1;
+    margin-left: -7px;
+}
+
+.single-blog-box {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.single-blog-box .img a img {
+    width: 100%;
+}
+
+.single-blog-box .img {
+    margin-bottom: 20px;
+}
+
+p.blog-meta a i {
+    color: orange;
+}
+
+p.blog-meta i {
+    color: orange;
+}
+
+.blog-icon {
+    padding: 0 20px;
+}
+
+.blog-icon h3 {
+    font-size: 21px;
+    font-family: serif;
+    font-weight: 700;
+}
+
+.blog-icon p {
+    color: grey;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.blog-icon a.readmore-btn {
+    background: orange;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.blog-heading.text-center {
+    padding: 30px 0;
+}
+
+p.blog-meta a i {
+    margin-right: 8px;
+}
+
+.blog-heading p {
+    margin-top: 45px;
+}
+
+/*quote section*/
+section#quote {
+    margin-top: 350px;
+}
+
+.quote-box .quote-img {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 57%;
+}
+
+.quote-box-content {
+    border-radius: 4px;
+    box-shadow: 0 0 20px 0 rgba(107, 160, 214, 0.7);
+    background: rgba(107, 160, 214, 0.9);
+    position: relative;
+    width: 100%;
+}
+
+h3.quote-title {
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+}
+
+h3.quote-title:after {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 1px;
+    background: #fff;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: 12px;
+    top: 100%;
+}
+
+h3.quote-title:before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -6.5px;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+form.quote-form {
+    padding: 40px 0;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+}
+
+.quote-form input#fname,
+input#email {
+    background: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #fff;
+}
+
+form.quote-form input#email {
+    width: 77%;
+    margin: 1%;
+    margin-right: 73px;
+}
+
+.quote-form input#fname {
+    width: 77%;
+    margin: 1%;
+    margin-left: 92px;
+}
+
+.quote-form button.btn.btn-primary {
+    display: block;
+    margin: 23px auto;
+}
+
+.quote-form textarea#msg {
+    border-top: 0;
+    background: transparent;
+    border-left: 0;
+    width: 77%;
+    margin-left: 21px;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+}
+
+/*contact*/
+.contact-form-part form {
+    position: relative;
+}
+
+.contact-form-part h2.absolute-text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: -34px;
+    margin-top: 33px;
+}
+
+section#contact {
+    margin-top: 55px;
+    position: relative;
+}
+
+.section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(./assets/images/litchi.jpg);
+    width: 58%;
+    height: 100%;
+    background-size: cover;
+}
+
+.section-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(94, 198, 192, .88);
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form-part {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.contact-form-part input,
+.contact-form-part textarea {
+    width: 100%;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #333;
+}
+
+.contact-form-part h2 {
+    color: #fff;
+    \: block;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.contact-form-part input:focus {
+    border: 1px solid #333;
+}
+
+.contact-form-part textarea:focus {
+    border: 1px solid #333;
+}
+
+.contact-form-part input[type=submit] {
+    width: auto;
+    border: 1px solid transparent;
+    color: #69B4B0;
+    background: white;
+    border-radius: 6px;
+    padding: 15px 26px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.content {
+    padding-left: 36px;
+    padding-top: 141px;
+}
+
+.content h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.content ul li i {
+    color: #55B2AB;
+    padding-right: 13px;
+}
+
+.content ul li {
+    margin-bottom: 5px;
+    color: #333333e3;
+    font-size: 15px;
+}
+
+.content ul {
+    margin-bottom: 24px;
+}
+
+.content a.box-btn {
+    color: #fff;
+    background: #6CB6B4;
+    padding: 14px 23px;
+    border-radius: 5px;
+    width: auto;
+}
+
+/*skew*/
+section#skew {
+    background-color: #C1C748;
+    margin-top: 20px;
+}
+
+.zigzag-text-bg-1 {
+    background: url('../images/CMS_Creative_164657191_Kingfisher.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.zigzag-text-bg-2 {
+    background: url('../images/litchi.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.zigzag-text-bg-2 .zigzag-text:after {
+    content: '';
+    position: absolute;
+    width: 5000%;
+    right: -4886%;
+    z-index: -1;
+    left: auto;
+    background: #53C4CA;
+}
+
+.zigzag-text h2 {
+    color: #fff;
+    padding-top: 77px;
+}
+
+.zigzag-text a {
+    background: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.zigzag-text {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.zigzag-text:after {
+    content: '';
+    position: absolute;
+    width: 5000%;
+    height: 100%;
+    background: #062151;
+    top: 0;
+    left: -4885%;
+    z-index: -1;
+    transform: skew(10deg);
+    opacity: 0.96;
+}
